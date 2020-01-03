@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+srcroot="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+
+python3 "$srcroot/manage.py" "$@"

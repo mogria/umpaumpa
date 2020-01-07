@@ -1,0 +1,20 @@
+[
+  {
+    "model": "punkevents.event",
+    "pk": "88cd5332-235e-4789-8b7d-1eb02c8984bd",
+    "fields": {
+      "name": "Testevent",
+      "description": "Test",
+      "start": "2020-01-05T18:44:44Z"
+    }
+  },
+  {
+    "model": "punkevents.event",
+    "pk": "9f5292c4-e4e8-490a-b7af-856ff8f321b5",
+    "fields": {
+      "name": "Another Test Event",
+      "description": "Descirption of another Test Event",
+      "start": "2020-01-06T18:45:08Z"
+    }
+  }
+]

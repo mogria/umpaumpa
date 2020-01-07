@@ -1,5 +1,5 @@
 from django.apps import AppConfig
 
 
-class PunkeventsConfig(AppConfig):
+class PunkEventsConfig(AppConfig):
     name = 'punkevents'

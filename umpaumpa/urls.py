@@ -16,6 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import include, path
 
+handler404 = 'punkevents.views.page_not_found'
 urlpatterns = [
     path('', include('punkevents.urls')),
     path('admin/', admin.site.urls),

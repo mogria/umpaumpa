@@ -1,0 +1,14 @@
+{% extends "punkevents/layout.html" %}
+{% block title %}Punk Konzis{% endblock %}
+{% block content %}
+<h1>Nächsti Konzis</h1>
+{% if events %}
+    {% for event in events %}
+    <article>
+        <h1><a href="{% url 'event' event.id %}">{{ event.name }}</a></h1>
+    </article>
+    {% endfor %}
+{% else %}
+    <p>Momentan gids kei nächsti Konzis.</p>
+{% endif %}
+{% endblock %}

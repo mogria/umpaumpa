@@ -1,3 +1,6 @@
+{% load l10n %}
+{% load i18n %}
+{% load static %}
 <!doctype html>
 <html>
     <head>
@@ -5,28 +8,39 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>{% block title %}{{ section.title }}Punk Konzis{% endblock %}</title>
+        <title>{% block title %}{{ section.title }}{% trans "Site Title" %}{% endblock %}</title>
+
+        <link rel="stylesheet" href="{% static "punkevents/main.css" %}" type="text/css" />
     </head>
 
     <body>
-        <header>
-            Header
-            <nav>
-                <ul>
-                    <li><a href="{% url 'index' %}">Events</a></li>
-                    <li>Venues</li>
-                    <li>Bands</li>
-                </ul>
-            </nav>
-        </header>
+        <div class="container">
+            <header>
+                <h1 class="site-title">{% trans "Site Header" %}</h1>
+                <nav>
+                    <ul>
+                        <li><a href="{% url 'index' %}">Events</a></li>
+                        <li><a href="#">Venues</a></li>
+                        <li><a href="#">Bands</a></li>
+                        <li class="language-selection">
+                            {% include 'punkevents/language_selection_form.html' %}
+                        </li>
+                    </ul>
+                </nav>
+            </header>
 
-        <section class="content">
-            {% block content %}
-            {% endblock %}
-        </section>
+            <section class="content">
+                {% block content %}
+                {% endblock %}
+            </section>
 
-        <footer>
-            <p>Footer</p>
-        </footer>
+            <footer>
+                <p class="left">{% trans "Footer Last Updated" %} {% now "Y-m-d" %}</p>
+                <p class="right">umpaumpa.ch</p>
+            </footer>
+
+        </div>
+        <script src="{% static "punkevents/main.js" %}" type="application/javascript"></script>
+
     </body>
 </html>

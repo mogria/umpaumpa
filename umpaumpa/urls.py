@@ -19,5 +19,6 @@ from django.urls import include, path
 handler404 = 'punkevents.views.page_not_found'
 urlpatterns = [
     path('', include('punkevents.urls')),
+    path('i18n/', include('django.conf.urls.i18n')),
     path('admin/', admin.site.urls),
 ]

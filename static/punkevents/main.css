@@ -1,0 +1,101 @@
+/* main.css */
+
+html {
+    font-size: 12pt;
+    font-family: "Courier New", monospace;
+    margin: 0;
+    padding: 0;
+    background-image: url(images/bg.png);
+}
+
+body {
+    color: #AAAAAA;
+    margin: 0;
+    padding: 0;
+}
+
+
+a {
+    color: #B03030;
+}
+
+a:visited {
+    color: #A03030;
+}
+
+a:hover {
+    color: #B0B030;
+}
+
+/* layout */
+.container {
+    background-image: url(images/bg-smashed-glass.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-color: #232323;
+
+    width: 80%;
+    margin: 0 auto;
+     /* border: 1em solid #424242; */
+    box-shadow: 0em 0em 1em 0em #424242;
+}
+
+header, section, footer {
+    padding: 2em;
+    padding-top: 2em;
+    background-image: url(images/bg-tile.png);
+}
+
+header {
+    padding-bottom: 2em;
+    border-bottom: 0.5em solid #424242;
+}
+
+header .site-title {
+    font-size: 2em;
+    display: inline-block;
+    text-shadow: #424242;
+}
+
+header nav {
+    display: inline-block;
+}
+
+header nav ul {
+    list-style-type: none;
+    line-height: 4em;
+}
+
+
+header nav ul li {
+    display: inline-block;
+}
+
+header nav ul li a {
+    padding: 1em;
+}
+
+header nav ul li:first-child a{
+    padding-left: 0em;
+}
+
+footer {
+    margin-top: 2em;
+    border-top: 0.5em solid #424242;
+}
+
+footer .left {
+    display: inline-block;
+}
+
+footer .right {
+    display: block;
+    float: right;
+}
+
+select, input[type=button], input[type=submit], button {
+    border: 0.125em solid #B03030;
+    background-color: #232323;
+    color: #B03030;
+    padding: 0.25em 0.5em;
+}

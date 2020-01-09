@@ -1,0 +1,64 @@
+# Swiss German Language File for a punk concert calender event website.
+# Copyright (C) 2020 THE punkevents'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the umpaumpa.ch package.
+# Mogria <m0gr14@gmail.com>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-01-09 23:54+0100\n"
+"PO-Revision-Date: 2020-01-09 20:06+0100\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: punkevents/templates/punkevents/date.html:11 punkevents/tests.py:58
+msgid "No event at this date"
+msgstr "A dem Datum gids kei Konzis."
+
+#: punkevents/templates/punkevents/event_item.html:4
+msgid "Event Start"
+msgstr "Start"
+
+#: punkevents/templates/punkevents/index.html:6
+msgid "Upcoming Events"
+msgstr "Nächsti Konzis"
+
+#: punkevents/templates/punkevents/index.html:12
+msgid "Currently there are no new Events available."
+msgstr "Momentan gids kei nächsti Konzis."
+
+#: punkevents/templates/punkevents/layout.html:11
+msgid "Site Title"
+msgstr "chruste.ch"
+
+#: punkevents/templates/punkevents/layout.html:19
+msgid "Site Header"
+msgstr "chruste.ch"
+
+#: punkevents/templates/punkevents/layout.html:38
+msgid "Footer Last Updated"
+msgstr "Z'letscht gändered am"
+
+#: punkevents/tests.py:46
+msgid "Page not found"
+msgstr "Siite nid gfunde"
+
+#: punkevents/views.py:21
+msgid "Event with UUID %(uuid) was not found."
+msgstr "Keis Konzi mit UUID %(uuid) gfunde."
+
+#: umpaumpa/settings.py:129
+msgid "English"
+msgstr "Englisch"
+
+#: umpaumpa/settings.py:130
+#, fuzzy
+#| msgid "Schwiizerdütsch"
+msgid "Schweizerdeutsch"
+msgstr "Schwiizerdütsch"

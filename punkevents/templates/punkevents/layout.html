@@ -8,7 +8,10 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>{% block title %}{{ section.title }}{% trans "Site Title" %}{% endblock %}</title>
+        <title>
+            {% block title %}{{ section.title }}{% endblock %}
+            {% trans "Site Title" %}
+        </title>
 
         <link rel="stylesheet" href="{% static "punkevents/main.css" %}" type="text/css" />
     </head>
@@ -19,9 +22,9 @@
                 <h1 class="site-title">{% trans "Site Header" %}</h1>
                 <nav>
                     <ul>
-                        <li><a href="{% url 'index' %}">Events</a></li>
-                        <li><a href="#">Venues</a></li>
-                        <li><a href="#">Bands</a></li>
+                        <li><a href="{% url 'index' %}">{% trans "Menu Events" %}</a></li>
+                        <li><a href="#">{% trans "Menu Venues" %}</a></li>
+                        <li><a href="#">{% trans "Menu Bands" %}</a></li>
                         <li class="language-selection">
                             {% include 'punkevents/language_selection_form.html' %}
                         </li>

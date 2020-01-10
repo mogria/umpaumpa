@@ -1,8 +1,9 @@
 {% extends "punkevents/layout.html" %}
 {% load i18n %}
-{% block title %}Konzis am Datum {{ date }}{% endblock %}
+{% load l10n %}
+{% block title %}{% trans "Events on the date" %} {{ date|date:"%D" }}{% endblock %}
 {% block content %}
-<h1>{% trans "Konzis am Datum {{ date }}</h1>
+<h1>{% trans "Events on the date" %} {{ date|localize }}</h1>
 {% if events %}
     {% for event in events %}
     {% include 'punkevents/event_item.html' %}

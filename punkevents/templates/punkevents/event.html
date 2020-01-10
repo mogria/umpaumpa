@@ -1,5 +1,6 @@
 {% extends 'punkevents/layout.html' %}
-{% block title %}Event {{ event.name }}{% endblock %}
+{% load i18n %}
+{% block title %}{% trans "Event" %} {{ event.name }}{% endblock %}
 {% block content %}
 <article>
     <h1>{{ event.name }}</h1>
@@ -10,7 +11,7 @@
 
     <ul>
         <li>
-            Start: {{ event.start }}
+            {% trans "Event Start" %}: {{ event.start }}
         </li>
     </ul>
 </article>

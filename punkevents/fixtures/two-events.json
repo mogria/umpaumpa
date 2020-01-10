@@ -13,7 +13,7 @@
     "pk": "9f5292c4-e4e8-490a-b7af-856ff8f321b5",
     "fields": {
       "name": "Another Test Event",
-      "description": "Descirption of another Test Event",
+      "description": "Description of another Test Event",
       "start": "2020-01-06T18:45:08Z"
     }
   }

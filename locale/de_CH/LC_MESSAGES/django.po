@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-09 23:54+0100\n"
+"POT-Creation-Date: 2020-01-10 13:34+0100\n"
 "PO-Revision-Date: 2020-01-09 20:06+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,15 +17,37 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: punkevents/templates/punkevents/date.html:11 punkevents/tests.py:58
+#: punkevents/templates/punkevents/404.html:2
+msgid "Not Found"
+msgstr "Nid gfunde"
+
+#: punkevents/templates/punkevents/404.html:5 punkevents/tests.py:55
+msgid "Page not found"
+msgstr "Siite nid gfunde"
+
+#: punkevents/templates/punkevents/404.html:7
+msgid "Sorry, the page you requested could not be found"
+msgstr "Tschuldigung, d'siite wo du agfragt hesch hed nid chenne gfunde werde."
+
+#: punkevents/templates/punkevents/date.html:4
+#: punkevents/templates/punkevents/date.html:6
+msgid "Events on the date"
+msgstr "Konzis am Datum"
+
+#: punkevents/templates/punkevents/date.html:12 punkevents/tests.py:67
 msgid "No event at this date"
 msgstr "A dem Datum gids kei Konzis."
 
-#: punkevents/templates/punkevents/event_item.html:4
+#: punkevents/templates/punkevents/event.html:3
 msgid "Event Start"
 msgstr "Start"
 
-#: punkevents/templates/punkevents/index.html:6
+#: punkevents/templates/punkevents/index.html:4
+#: punkevents/templates/punkevents/layout.html:25
+msgid "Menu Events"
+msgstr "Konzis"
+
+#: punkevents/templates/punkevents/index.html:6 punkevents/tests.py:30
 msgid "Upcoming Events"
 msgstr "Nächsti Konzis"
 
@@ -33,32 +55,46 @@ msgstr "Nächsti Konzis"
 msgid "Currently there are no new Events available."
 msgstr "Momentan gids kei nächsti Konzis."
 
-#: punkevents/templates/punkevents/layout.html:11
+#: punkevents/templates/punkevents/index.html:16 punkevents/tests.py:39
+msgid "Calendar"
+msgstr "Kalender"
+
+#: punkevents/templates/punkevents/index.html:22 punkevents/tests.py:40
+msgid "Currently there are no event dates available in the calendar"
+msgstr "Momentan sind kei Konzis im Kalender iitreid."
+
+#: punkevents/templates/punkevents/language_selection_form.html:14
+msgid "OK"
+msgstr "OK"
+
+#: punkevents/templates/punkevents/layout.html:13
 msgid "Site Title"
-msgstr "chruste.ch"
+msgstr "umpaumpa.ch"
 
-#: punkevents/templates/punkevents/layout.html:19
+#: punkevents/templates/punkevents/layout.html:22
 msgid "Site Header"
-msgstr "chruste.ch"
+msgstr "umpaumpa.ch"
 
-#: punkevents/templates/punkevents/layout.html:38
+#: punkevents/templates/punkevents/layout.html:26
+msgid "Menu Venues"
+msgstr "Ort"
+
+#: punkevents/templates/punkevents/layout.html:27
+msgid "Menu Bands"
+msgstr "Bänds"
+
+#: punkevents/templates/punkevents/layout.html:41
 msgid "Footer Last Updated"
 msgstr "Z'letscht gändered am"
 
-#: punkevents/tests.py:46
-msgid "Page not found"
-msgstr "Siite nid gfunde"
-
-#: punkevents/views.py:21
+#: punkevents/views.py:23
 msgid "Event with UUID %(uuid) was not found."
 msgstr "Keis Konzi mit UUID %(uuid) gfunde."
 
-#: umpaumpa/settings.py:129
+#: umpaumpa/settings.py:130
 msgid "English"
 msgstr "Englisch"
 
-#: umpaumpa/settings.py:130
-#, fuzzy
-#| msgid "Schwiizerdütsch"
+#: umpaumpa/settings.py:131
 msgid "Schweizerdeutsch"
 msgstr "Schwiizerdütsch"

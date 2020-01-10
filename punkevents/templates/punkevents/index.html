@@ -1,7 +1,7 @@
 {% extends "punkevents/layout.html" %}
 {% load l10n %}
 {% load i18n %}
-{% block title %}Punk Konzis{% endblock %}
+{% block title %}{% trans "Menu Events" %}{% endblock %}
 {% block content %}
 <h1>{% trans "Upcoming Events" %}</h1>
 {% if events %}
@@ -10,5 +10,16 @@
     {% endfor %}
 {% else %}
 <p>{% trans "Currently there are no new Events available." %}</p>
+
 {% endif %}
+
+<h1>{% trans "Calendar" %}</h1>
+{% if calendar_events %}
+    {% for calendar_event in calendar_events %}
+    {% include 'punkevents/calendar_event_item.html' %}
+    {% endfor %}
+{% else %}
+<p>{% trans "Currently there are no event dates available in the calendar" %}</p>
+{% endif %}
+
 {% endblock %}

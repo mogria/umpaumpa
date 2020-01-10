@@ -17,6 +17,7 @@ body {
 
 a {
     color: #B03030;
+    font-weight: bold;
 }
 
 a:visited {

@@ -118,7 +118,7 @@ django.conf.locale.LANG_INFO.update({
         'code': 'de-ch',
         'name': 'Swiss-German',
         'name_local': 'Schwiizerdütsch',
-        'fallback': 'de',
+        'fallback': 'en',
     },
 })
 

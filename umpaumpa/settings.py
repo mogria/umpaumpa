@@ -112,7 +112,6 @@ AUTH_PASSWORD_VALIDATORS = [
 # https://docs.djangoproject.com/en/3.0/topics/i18n/
 
 import django.conf.locale
-print(django.conf.locale.LANG_INFO)
 django.conf.locale.LANG_INFO.update({
     'de-ch': {
         'bidi': False,

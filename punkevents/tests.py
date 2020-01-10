@@ -17,9 +17,9 @@ class PagesTestCase(TestCase):
     def testUpcomingEvents(self):
         response = self.c.get('/')
         self.assertTemplateUsed(response, 'punkevents/index.html')
-        self.assertContains(response, 'Nächsti Konzis')
+        self.assertContains(response, _('Upcoming Events'))
         self.assertContains(response, self.event.name)
-        self.assertNotContains(response, 'Momentan gids kei nächsti Konzis.')
+        self.assertNotContains(response, _("Currently there are no new Events available."))
         assert response.status_code == 200
 
 
@@ -29,7 +29,7 @@ class PagesTestCase(TestCase):
         self.assertTemplateUsed(response, 'punkevents/index.html')
         self.assertContains(response, _('Upcoming Events'))
         self.assertNotContains(response, self.event.name)
-        self.assertContains(response, 'Momentan gids kei nächsti Konzis.')
+        self.assertContains(response, _("Currently there are no new Events available."))
         assert response.status_code == 200
 
     def testUpcomingEventsNoCalendarEvents(self):

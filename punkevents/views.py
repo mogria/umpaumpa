@@ -2,6 +2,8 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from django.http import Http404
 from django.utils.translation import gettext as _
+from django.utils.timezone import make_aware
+
 from .models import Event
 import datetime
 
@@ -20,15 +22,15 @@ def event(request, event_id):
             'event': event
         })
     except Event.DoesNotExist:
-        raise Http404(_("Event with UUID %(uuid) was not found.") % {
-            'uuid': int(event_id),
+        raise Http404(_("Event with UUID %(uuid)s was not found.") % {
+            'uuid': str(event_id),
         })
 
 def date(request, date):
     parsed_date = datetime.datetime.strptime(date, "%Y-%m-%d" )
-
+    date = make_aware(parsed_date)
     try:
-        events = Event.objects.get(start=parsed_date)
+        events = Event.objects.get(start=date)
         print(events)
     except Event.DoesNotExist:
         events = []
